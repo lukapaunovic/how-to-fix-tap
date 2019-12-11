@@ -1,0 +1,58 @@
+<div class="whmcscontainer">
+    
+    
+
+<div class="pagetitle">
+    <div></div>
+</div>
+
+<script language="javascript">
+function addBookmark() {
+    if (window.sidebar) {
+        window.sidebar.addPanel('vpn.ac - OpenVPN Error: All TAP-Windows adapters on this system are currently in use', location.href,"");
+    } else if( document.all ) {
+        window.external.AddFavorite( location.href, 'vpn.ac - OpenVPN Error: All TAP-Windows adapters on this system are currently in use');
+    } else if( window.opera && window.print ) {
+        return true;
+    }
+}
+</script>
+
+
+<h2 class="kbtitle">OpenVPN Error: All TAP-Windows adapters on this system are currently in use</h2>
+
+<div class="kbarticle itemtext internalpadding">The error "All TAP-Windows adapters on this system are currently in use" suggests that there is a problem with the virtual Tun/Tap network adapter used by OpenVPN on Windows. To solve the issue, you need to re-enable the adapter or reinstall the driver. &nbsp;<br><br><strong>Solution 1: re-enable the adapter</strong><br><br>Open Control Panel &gt;&nbsp;Network and Internet &gt;&nbsp;Network and Sharing Center &gt; Change adapter settings.&nbsp;<br>Check description of network adapters to find the Tap-Windows Adapter. &nbsp;<br>Right click on it &gt; Disable.&nbsp;<br>Right click again &gt; Enable. &nbsp;<br><br><strong>Solution 2: reinstall the Tap driver &nbsp;</strong><br><br>Check if it is already installed by opening&nbsp;<strong>C:\Program Files\TAP-Windows&nbsp;</strong><br>Right click on <strong>Uninstall</strong> and select <strong>Run as administrator&nbsp;</strong><br><br>Download the Tap driver from OpenVPN <a href="https://swupdate.openvpn.org/community/releases/tap-windows-9.21.2.exe">repository</a> and install it (right click on it &gt; Run as administrator)<br>If you don't have access to openvpn.org but you have our software, open our software location (where it was unzipped) and find the driver in the <strong>data\Tap\</strong> subfolder.</div>
+
+
+
+<br>
+
+<div class="page-header">
+    <div class="styled_title"><h2>Also Read</h2></div>
+</div><h2>Other tutorials:</h2>
+<br>
+<ul class="itemlist">
+  <li class="internalpadding"><strong><a href="/knowledgebase/52/Slow-speed-in-China.html">Slow speed in China</a></strong>&nbsp;</li>
+  <li class="internalpadding"><strong><a href="/knowledgebase/83/googlecom-provides-region-based-version.html">google.com provides region-based version</a></strong>&nbsp;</li>
+  <li class="internalpadding"><strong><a href="/knowledgebase/39/Cant-connect-to-VPN-wrong-userorpass.html">Can't connect to VPN: wrong user/pass</a></strong>&nbsp;</li>
+  <li class="internalpadding"><strong><a href="/knowledgebase/46/Canandsharp039t-connect-to-VPN-in-China-update-25or06or2018.html">Can't connect to VPN in China (update 25/06/2018)</a></strong>&nbsp;</li>
+  <li class="internalpadding"><strong><a href="/knowledgebase/55/Windows-Firewall-rules-to-block-P2PorTorrent-traffic-if-VPN-disconnects.html">Windows Firewall rules to block P2P/Torrent traffic if VPN disconnects</a></strong>&nbsp;</li>
+</ul>
+
+
+
+
+<script type="text/javascript" src="/assets/js/main.min.js"></script>
+  <script src="/templates/vpnac/js/jquery-ui.min.js"></script>
+  <script src="/templates/vpnac/js/jquery.selectBoxIt.min.js"></script>
+
+  <script src="/templates/vpnac/js/whmcs.js"></script>
+  <script src="/templates/vpnac/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+$("#username").focus();
+</script>
+
+
+
+    </div>
